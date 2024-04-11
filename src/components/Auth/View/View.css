@@ -1,0 +1,84 @@
+/* View.css */
+
+.main-div {
+  display: flex;
+  justify-content: center;
+}
+
+.Signup-Page {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+
+
+.top-bar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.top-bar p {
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+}
+
+.counters-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.counter-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.counter-card h2 {
+  margin-top: 0;
+}
+
+.slots-scrollable {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.slots-grid {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.slot {
+  width: 120px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Add rounded corners */
+  padding: 10px;
+}
+
+.slot:hover {
+  transform: translateY(-5px); /* Move the slot upwards on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.slot p {
+  margin: 5px 0;
+}
+
+.slot.booked {
+  background-color: #ffcccc;
+}
+
+.slot.available {
+  background-color: #ccffcc;
+}
